@@ -30,6 +30,13 @@ namespace Ejemplo2POOTemperaturaCSharp
                     lblresultado.Visible = true;
                     break;
 
+                case "2":
+                    temperatura.setGrados(double.Parse(txtgrados.Text));
+                    lblresultado.Text = temperatura.calcularCentigrados().ToString() + " °C";
+                    lblresultado.Visible = true;
+                    break;
+
+
                 default:
                     MessageBox.Show("Debes seleccionar una opción válida");
                     break;

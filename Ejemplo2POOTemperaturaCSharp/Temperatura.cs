@@ -22,7 +22,9 @@ namespace Ejemplo2POOTemperaturaCSharp
             return ((this.getGrados() * 9 / 5) +32);
         }
 
-        
+        public double calcularCentigrados() {
+            return ((this.getGrados() - 32) * 5 / 9);
+        }
     
     }
 }
